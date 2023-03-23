@@ -21,7 +21,7 @@ import {
   faDownload,
   faRobot,
   faAppleAlt,
-  faXmark,
+  
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import img from "../Asset/stats.png";
@@ -37,13 +37,13 @@ const Dashboard = () => {
   const [button, setbutton] = useState();
   const [page, setPage] = useState(1);
   const [pageCount, setPageCount] = useState(0);
-  const [state, setState] = useState([
-    {
-      startDate: addDays(new Date(), -500),
-      endDate: addDays(new Date(), 50),
-      key: "selection",
-    },
-  ]);
+//   const [state, setState] = useState([
+//     {
+//       startDate: addDays(new Date(), -500),
+//       endDate: addDays(new Date(), 50),
+//       key: "selection",
+//     },
+//   ]);
 
   const [value, setValue] = React.useState(dayjs("2022-08-24"));
   const [firstvalue, setFirstValue] = React.useState(dayjs("2022-04-01"));
