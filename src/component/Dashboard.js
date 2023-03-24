@@ -21,7 +21,7 @@ import {
   faDownload,
   faRobot,
   faAppleAlt,
-  
+
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import img from "../Asset/stats.png";
@@ -37,13 +37,7 @@ const Dashboard = () => {
   const [button, setbutton] = useState();
   const [page, setPage] = useState(1);
   const [pageCount, setPageCount] = useState(0);
-//   const [state, setState] = useState([
-//     {
-//       startDate: addDays(new Date(), -500),
-//       endDate: addDays(new Date(), 50),
-//       key: "selection",
-//     },
-//   ]);
+  
 
   const [value, setValue] = React.useState(dayjs("2022-08-24"));
   const [firstvalue, setFirstValue] = React.useState(dayjs("2022-04-01"));
@@ -307,7 +301,7 @@ const Dashboard = () => {
         </div>
 
         <div className="bg-[#283046] lg:w-[1250px] w-full p-2">
-          <div className=" flex justify-between ">
+          <div className=" flex justify-between flex-col md:flex-row ">
             <div className="space-x-4 capitalize ">
               <span className="text-white">show</span>
               <select
@@ -325,7 +319,7 @@ const Dashboard = () => {
 
             {/* date picker */}
 
-            <div className="date   bg-[#283046] flex justify-between border border-blue-700 space-x-4">
+            <div className="date   bg-[#283046] flex justify-between border border-blue-700 space-x-4 mt-5">
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
                   <DemoContainer components={["DatePicker", "DatePicker"]}>
                     <DatePicker
